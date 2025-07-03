@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Age Calculator</h1>
+
+    <div class="input-group">
+      <label>Date of Birth:</label>
+      <div class="select-group">
+        <select id="dob-day"></select>
+        <select id="dob-month"></select>
+        <select id="dob-year"></select>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label>Calculate Age As On:</label>
+      <div class="select-group">
+        <select id="ref-day"></select>
+        <select id="ref-month"></select>
+        <select id="ref-year"></select>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button onclick="startLiveFromReference()">Calculate Age</button>
+      <button class="reset-btn" onclick="resetFields()">Reset</button>
+      <button onclick="downloadPDF()">Download as PDF</button>
+    </div>
+
+    <div id="result"></div>
+
+   <div class="info">
+  <h2>🧠 How This Age Calculator Works</h2>
+  <p>
+    This age calculator helps you find out how much time has passed between your Date of Birth and any given reference date. It supports both historical and future age calculations, making it useful for everything from legal applications to fun personal tracking.
+  </p>
+  <p>
+    Once the two dates are selected, it calculates your age in <b>years, months, days</b> as well as total time lived in <b>weeks, hours, minutes, and seconds</b>. It also includes a <b>real-time live clock</b> that shows how the seconds continue to pass since your reference date.
+  </p>
+  <p>
+    For example, if you select your Date of Birth and today’s date, the tool not only gives you your exact age, but also continues to tick forward in seconds, minutes, and hours — making it feel like a live age ticker.
+  </p>
+  <p>
+    Finally, you can <b>download your result as a PDF</b> report for official or personal use. All calculations are done using native JavaScript Date APIs to ensure accurate, efficient performance.
+  </p>
+</div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
