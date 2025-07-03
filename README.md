@@ -10,7 +10,6 @@ A **professional, real-time Age Calculator** web app built using **HTML, CSS, an
 - 📅 Calculate age from **Date of Birth** to any **custom date**
 - 📥 Download the result as a **PDF file**
 - 📱 Fully **responsive UI** for desktop and mobile
-- 🧠 "How it Works" section for user explanation
 
 ## 🛠️ Tech Stack
 
